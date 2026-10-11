@@ -1,18 +1,17 @@
 <script setup lang="ts">
 import { Button, Select, Tag } from 'primevue'
 const props = defineProps<{
-  content: string
-  //   method:
+  title: string
+  options: string[] | number[]
 }>()
 let test = false
 function method() {
   test = true
 }
-const somethings = ['hey', 'amelia', 'zarina', 'julie', 'jasmin', 'sylvie']
 </script>
 <template>
-  <Tag @click="method" class="pill" :value="props.content" rounded>
-    <Select v-model="test" :options="somethings" :placeholder="props.content" />
+  <Tag @click="method" class="pill" :value="props.title" rounded>
+    <Select v-model="test" :options="options" :placeholder="props.title" />
   </Tag>
 </template>
 <style scoped>

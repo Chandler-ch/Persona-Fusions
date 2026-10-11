@@ -5,7 +5,7 @@ import NavLink from './NavLink.vue'
   <div class="container">
     <NavLink content="FUSIONEN" />
     <NavLink content="PERSONAS" />
-    <NavLink content="SPIELTEIL" />
+    <NavLink content="ADD" />
     <NavLink content="LEGENDE" />
   </div>
   <hr />
