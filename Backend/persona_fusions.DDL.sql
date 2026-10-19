@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 19, 2026 at 01:02 PM
+-- Generation Time: Oct 19, 2026 at 03:28 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -32,7 +32,8 @@ USE `persona fusions`;
 DROP TABLE IF EXISTS `arcana`;
 CREATE TABLE `arcana` (
   `ID` int(11) NOT NULL,
-  `Arcananame` varchar(45) NOT NULL
+  `Arcananame` varchar(45) NOT NULL,
+  `Hex` varchar(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
